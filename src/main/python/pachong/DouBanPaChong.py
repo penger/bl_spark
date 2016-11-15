@@ -1,8 +1,13 @@
 # -*-coding:UTF-8-*-
-import sys, time, os, re
-import urllib, urllib2, cookielib
-from bs4 import BeautifulSoup
+import cookielib
+import os
+import re
 import sys
+import urllib
+import urllib2
+
+from bs4 import BeautifulSoup
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 temp_path = "d:\\info.txt"
