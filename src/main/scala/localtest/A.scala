@@ -7,7 +7,9 @@ import org.apache.spark.rdd.RDD
   */
 object A {
 
-
+  def main(args: Array[String]): Unit = {
+    print("hello world !")
+  }
 
 }
 

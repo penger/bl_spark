@@ -24,11 +24,10 @@ public class ImpalaJDBC {
             while(resultSet.next()){
                 System.out.println(resultSet.getString(2)+"-----------");
             }
+            statement.close();
             resultSet.close();
             conn.close();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 

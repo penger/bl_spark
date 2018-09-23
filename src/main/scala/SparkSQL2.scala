@@ -10,11 +10,12 @@ import scala.collection.mutable.ArrayBuffer
   */
 object SparkSQL2 {
   def main(args: Array[String]): Unit = {
-    System.setProperty("HADOOP_USER_NAME","bl")
+    System.setProperty("HADOOP_USER_NAME","be")
     val conf = new SparkConf().setAppName("spark sql").setMaster("local")
     val sc = new SparkContext(conf)
     val sqlContext = new SQLContext(sc)
-    val rowRdd = sc.textFile("hdfs://m78sit:8022/user/bl/b.q").filter(_.length >1).map(x=>(x,x.length)).sortByKey(true).saveAsTextFile("hdfs://m78sit:8022/user/bl/result")
+    val rowRdd = sc.textFile("hdfs://node2:8022/blocktest/a").count()
+//    val rowRdd = sc.textFile("hdfs://node2:8022/user/bl/b.q").filter(_.length >1).map(x=>(x,x.length)).sortByKey(true).saveAsTextFile("hdfs://m78sit:8022/user/bl/result")
     println(rowRdd)
 
 

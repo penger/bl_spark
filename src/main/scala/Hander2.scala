@@ -14,6 +14,9 @@ object Hander2 {
 
   def test(f:File, func : BufferedWriter =>Unit): Unit ={
     val bw = new BufferedWriter(new OutputStreamWriter( new FileOutputStream(f)))
+    val s="kdfs,dfsaf"
+    s.conta
+    println(s.split(",")(0))
     func(bw)
     bw.close()
 

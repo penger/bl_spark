@@ -1,7 +1,7 @@
 package localtest
 
 import org.apache.spark.{SparkConf, SparkContext}
-
+import org.apache.spark.rdd.RDD._
 /**
   * Created by GP39 on 2016/9/6.
   */

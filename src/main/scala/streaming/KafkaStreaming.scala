@@ -8,7 +8,7 @@
 //  * Created by GP39 on 2016/9/29.
 //  */
 //object KafkaStreaming {
-//  def main(args: Array[String]): Unit = {
+////  def main(args: Array[String]): Unit = {
 //    if(args.length <4 ){
 //      println("usage: kafkawordcount <zkQuorum>,<group><topics><numThreads>")
 //      System.exit(1)

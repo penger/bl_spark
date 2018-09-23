@@ -68,7 +68,11 @@ object HelloWorld {
 
     println(f2(1))
     def f3:(Int,Int) =>Int = _+_
+
+    def f4:(Int,Int)=>Int = _+_
+
     println(f3(3,54))
+    println(f4(3,54))
 
   val filesHere = new File(".").listFiles()
     for ( xx <- filesHere){
